@@ -1,0 +1,553 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px; /* Increased padding for vertical size */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.header .location {
+    
+    
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.header .location span {
+    color: #000;
+    margin-left: 100px;
+    font-size: 35px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: bold;
+   
+
+}
+.header .icons {
+    display: flex;
+    align-items: center;
+}
+.header .icons .icon-container {
+    position: relative;
+    margin-left: 20px;
+}
+.header .icons .icon-container i {
+    font-size: 22px;
+    color: #000000;
+    transition: color 0.3s, transform 0.3s;
+    padding: 7px;
+}
+.header .icons .icon-container i:hover {
+    color: #000;
+    transform: scale(1.7);
+}
+.header .icons .icon-container .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    margin: 5px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Aref Ruqaa", system-ui;
+}
+.search-bar i {
+    position: absolute;
+    left: 40px;
+    color: #888;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Added upper shadow */
+    transition: transform 0.3s ease-in-out;
+}
+.footer .footer-item {
+    text-align: center;
+    color: #000000;
+    transition: transform 0.3s ease-in-out;
+}
+.footer .footer-item:hover {
+    transform: scale(1.4);
+}
+.footer .footer-item i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+.footer .footer-item span {
+    font-size: 10px;
+    font-family: "Aref Ruqaa", system-ui;
+    
+}
+.footer .flash-sale {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.footer .flash-sale i {
+    font-size: 28px;
+    color: #000000;
+}
+.footer .flash-sale:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+.footer .blank-item {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    .header {
+        padding: 40px 40px;
+       
+    }
+
+    .header .location span {
+        color: #000;
+        margin-left: 100px;
+        font-size: 50px;
+        text-align: center;
+    
+    }
+    .footer .flash-sale {
+        width: 130px;
+        height: 130px;
+        
+    }
+    .footer .flash-sale i {
+        font-size: 60px;
+    }
+    .footer .blank-item {
+        width: 60px;
+        height: 100px;
+    }
+
+    .footer .footer-item i {
+        font-size: 55px;
+        display: block;
+        margin-bottom: 5px;
+        padding: 3px;
+       
+
+}
+.footer .footer-item span {
+    font-size: 20px;
+    
+ 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:27px 0;
+   
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    margin: 5px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px 25px 90px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: "Aref Ruqaa", system-ui;
+    
+}
+.search-bar i {
+    position: absolute;
+    left: 50px;
+    color: #888;
+    
+}
+
+.custom-size {
+    font-size: 40px;  /* Adjust size here */
+  }
+
+  .header .icons .icon-container i {
+    font-size: 45px;
+    color: #000000;
+    transition: color 0.3s, transform 0.3s;
+    padding: 15px;
+    
+}
+
+.header .icons .icon-container .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50% ;
+    padding: 5px 13px;
+    font-size: 22px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 2% 2% 3% 3%;
+}
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+
+
+
+.container1 {
+    padding: 20px;
+}
+.title1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Oleo Script", system-ui;
+
+}
+.categories {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.categories::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.category {
+    min-width: 250px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #fefefe;
+    text-decoration: none;
+    
+}
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+}
+.category span {
+    display: block;
+    padding: 0px 0px ;
+    font-size: 50px;
+    margin-top: -80px;
+    font-family: "Pacifico", cursive;
+   
+}
+@media (mix-width: 768px) {
+    .categories {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    .category {
+        width: calc(25% - 10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    padding: 20px;
+    margin-bottom: 70px;
+}
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header1 h1 {
+    font-size: 55px;
+    color: #333;
+    margin: 0;
+    font-family: "Oleo Script", system-ui;
+    font-weight: bold;
+}
+
+.header2 h1 {
+    font-size: 65px;
+    color: #333;
+    margin: 0;
+    font-family: "Oleo Script", system-ui;
+    font-weight: bold;
+   text-align: center;
+   padding-top: 50px;
+}
+.filter-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 50px;
+    cursor: pointer;
+   font-size: 1.3rem;
+   font-family: "Aref Ruqaa", system-ui;
+}
+.filter-button i {
+    margin-left: 5px;
+    
+}
+
+.filter-button:hover {
+    transform: scale(1.2) 
+}
+
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1)
+}
+.product-image {
+    background-color: #ccc;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+.product-details {
+    padding: 10px;
+}
+.product-details p {
+    margin: 5px 0;
+    color: #333;
+    font-family: "Pacifico", system-ui;
+}
+.product-details .price {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Pacifico", system-ui;
+}
+.product-details .previous-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 20px;
+}
+.add-to-cart {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-family: "Playwrite DE Grund", system-ui;
+}
+.add-to-cart:hover {
+    background-color: #e6b800;
+    transform: scale(1.2)
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.slider-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.slider {
+    width: 100%;
+    margin: 0 10px;
+    position: relative;
+}
+.price-label {
+    font-size: 14px;
+    color: #333;
+}
+.modal-content h2, .modal-content h3 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+.modal-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.modal-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.slider-container .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
